@@ -1,124 +1,234 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Задание 1 - базовый стиль</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        ul {
-            background-color: #f9f9f9;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header id="main-header">
+        <div class="container">
+            <div class="header-content">
+                <figure class="logo-container">
+                    <img class="logo" src="Mercedes-Logo.svg.png" alt="Mercedes-Benz Logo" width="80">
+                </figure>
+                <div class="site-title">
+                    <h1>WAVE TO EARTH</h1>
+                    <p>The waves will take us far away</p>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<h1>Задание 1</h1>
+    <nav id="main-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#hyperlinks">Ссылки</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#model-table">Модели</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-form">Форма</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<h2>Список</h2>
-<ul>
-        <li> <a href="http://kubsu.ru/" target="_blank">КубГу (http)</a></li>
-        <li> <a href="https://kubsu.ru/" target="_blank">Официальный сайт КубГу (https)</a></li>
-        <li> <a href="https://kubsu.ru/">
-            <img src="https://novorab.ru/wp-content/uploads/2023/06/kubgu.jpg" alt="Главный корпус Кубгу" width="450">
-        </a></li>
-        <li> <a href="secondpage.html">внутренняя страница</a></li>
-        <li> <a href="">главная страница</a></li>
-        <li> <a href="#fragment">фрагмент текущей страницы (на форму для заполнения)</a></li>
-        <li> <a href="https://www.kubsu.ru/ru/search?keys=образование&category=8&year=2023">поиск 3 параметров</a></li>
-        <li> <a href="https://www.kubsu.ru/ru/node/38730?id=12345">страница с id</a></li>
-        <li> <a href="catalog.html">текущий каталог</a></li>
-        <li> <a href="info.html">каталог info</a></li>
-        <li> <a href="./Catalog/lvlup.html">уровень выше текущего</a></li>
-        <li> <a href="./Catalog/Catalog2/2lvlup.html">два уровня выше</a></li>
-        <li> <p>Контекст: <a href="https://kubsu.ru">КубГУ</a></p></li>
-        <li> <a href="https://www.kubsu.ru/ru/university#fragment">фрагмент страницы на стороннем сайте КубГУ</a></li>
-        <li> <a href="">пустой href</a></li>
-        <li> <a>без href</a></li>
-        <li> <a href="https://kubsu.ru" rel="nofollow">nofollow</a></li>
-        <li> <a href="https://kubsu.ru" rel="noindex">noindex</a></li>
-        <li> <a href="ftp://example.com/">FTP файл</a></li>
-    </ul>
+    <main id="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="links-section" id="hyperlinks">
+                    <h2>Полезные ссылки</h2>
+                    <ul class="links-list">
+                        <li> <a href="http://kubsu.ru/">Абсолютная ссылка на kubsu.ru (HTTP)</a></li>
+                        <li> <a href="https://kubsu.ru/">Абсолютная ссылка на kubsu.ru (HTTPS)</a></li>
+                        <li> Ссылка-изображение: <a href="https://www.mercedes-benz.com/en/" ><img src="avto.jfif" alt="Сайт mercedes" width="150"></a></li>
+                        <li> <a href="internal-page.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+                        <li> <a href="index.html">Сокращенная ссылка на главную страницу</a></li>
+                        <li> <a href="#contact-form">Ссылка на фрагмент текущей страницы(форма)</a></li>
+                        <li> <a href="https://www.kubsu.ru/ru/search?keys=образование&category=8&year=2023">Ссылка с тремя параметрами в URL</a></li>
+                        <li> <a href="https://www.kubsu.ru/ru/node/38730?id=12345">Ссылка с параметром id в URL</a></li>
+                        <li> <a href="current-page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+                        <li> <a href="about/about-page.html">Относительная ссылка на страницу в каталоге about</a></li>
+                        <li> <a href="LUP/LUP-page.html">Относительная ссылка на страницу уровнем выше</a></li>
+                        <li> <a href="LUPUP/LUP/LUPUP.html">Относительная ссылка на страницу двумя уровнями выше</a></li>
+                        <li> Контекстная ссылка: <p>Это абзац текста, в котором находится <a href="https://kubsu.ru">контекстная ссылка</a> на сайт КубГУ.</p></li>
+                        <li> <a href="https://ru.wikipedia.org/wiki/Mercedes-Benz#История">Ссылка на фрагмент страницы стороннего сайта (Wikipedia - история mercedes)</a></li>
+                        
+                        
+                       
+                        <li> <a href="">Ссылка с пустым href</a></li>
+                        <li> <a>Ссылка без href</a></li>
+                        <li> <a href="https://kubsu.ru" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+                        <li> <a href="https://kubsu.ru" rel="noindex">Ссылка, запрещенная для индексации поисковиками</a></li>
+                       <li> <a href="ftp://example.com/">Ссылка на файл на сервере FTP с авторизацией</a></li>
+                        <li class="links-list">20. Нумерованный список ссылок с подписями title</li>
+                        
+                            <li><a href="https://www.mercedes-benz.com/en/vehicles/mercedes-maybach/" title="Информация об авто">Информация о автомобилях</a></li>
+                            <li><a href="https://www.mercedes-benz.com/en/design/concept-cars/concept-cla-class/" title="Инновации">Инновации</a></li>
+                             <li><a href="https://www.mercedes-benz.com/en/design/concept-cars/vision-one-eleven/" title="Научная деятельность">Наука</a></li>
+                            
+                           
+                      
+                        
+
+                        
+                    </ul>
+
+ 
+                        
+                        
+                            
+                        
+                        
+                    <h2>15. Ссылки из областей картинки </h2>
+            
+            <div style="text-align: center;">
+                <img src="prhotomap.png" alt="Пример изображения с областями" usemap="#examplemap" class="image-map" width="500">
+                            <map name="examplemap">
+                                <area shape="rect" coords="230,0,500,400" href="https://vk.com/mercedes_benz_official" alt="Прямоугольная область" title="Фан клуб в ВК">
+                                <area shape="circle" coords="100,100,150" href="https://www.mercedes-benz.com/en/" alt="Круглая область" title="Сайт mercedes-benz" >
+                            </map>
+            </div>
+                </section>
+
+                <section class="table-section" id="model-table">
+                    <h2>Albums and Discography</h2>
+                    
+                    <table class="mercedes-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Модель</th>
+                                <th>Класс</th>
+                                <th>Двигатель</th>
+                                <th>Мощность (л.с.)</th>
+                                <th>Цена (от)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2" class="model-name">A-Класс</td>
+                                <td>Седан</td>
+                                <td>Компактный</td>
+                                <td>1.3 L4</td>
+                                <td>163</td>
+                                <td>2 800 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Хэтчбек</td>
+                                <td>Компактный</td>
+                                <td>1.3 L4</td>
+                                <td>136</td>
+                                <td>2 650 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="model-name">C-Класс</td>
+                                <td>Седан</td>
+                                <td  >Бизнес</td>
+                                <td rowspan="3" >2.0 L4</td>
+                                <td rowspan="3" >204</td>
+                                <td>4 200 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Универсал</td>
+                                 <td  >Бизнес</td>
+                                
+                                
+                                <td>4 500 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td class="model-name">E-Класс</td>
+                                <td rowspan="2" >Седан</td>
+                                <td>Представительский</td>
+                                
+                                
+                                <td>5 600 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td class="model-name">S-Класс</td>
+                                
+                                <td>Люкс</td>
+                                <td>3.0 L6</td>
+                                <td>435</td>
+                                <td>9 800 000 ₽</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="form-section" id="contact-form">
+                    <h2>Форма</h2>
+                    <form id="mercedes-form">
+                        <div class="form-group">
+                            <label for="name">Имя: </label><br>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон: </label><br>
+                            <input type="tel" id="phone" name="phone" required pattern="^\+7\d{10}$" placeholder="+79999999999">
+                             <div class="error-massage">Пожалуйста, введите телефон в формате +7</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email: </label><br>
+                            <input type="email" id="email" name="email" required>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="birthdate">Дата рождения: </label><br>
+                            <input type="date" id="birthdate" name="birthdate" required >
+                            
+                        </div>
+                        <div class="form-group">
+                            <span>Пол:</span>
+                            <div class="radio-group">
+                                <label><input type="radio" name="gender" value="male" required> Мужской</label>
+                                <label><input type="radio" name="gender" value="female"> Женский</label>
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="languages">Любимый язык программирования:</label>
+                            <select multiple id="languages" name="languages">
+                                <option value="pascal">Pascal</option>
+                                <option value="Python">Python</option>
+                                <option value="C++">C++</option>
+                                <option value="C">C</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="PHP">PHP</option>
+                                <option value="Java">Java</option>
+                                <option value="Haskel">Haskel</option>
+                                <option value="Clojure">Clojure</option>
+                                <option value="Prolog">Scala</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="bio">Биография:</label><br>
+                            <textarea id="bio" name="bio" required minlength="10"></textarea>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label>С контрактом ознакомлен(a)<input type="checkbox" id="agreement" name="agreement" required> </label><br>
+                            
+                        </div>
+                        <button type="submit" id="submitButton">Сохранить</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p> Mercedes-Benz </p>
+                <p>Автор: Артём Мотыжев</p>
+                <p><a href="#main-header">Вернуться наверх</a></p>
+            </div>
+        </div>
+    </footer>
+  <script src="JS.js" defer></script>
 </body>
-<h2>области картинки</h2>
-    <p>квадрат - русская версия сайта КУБГУ</p>
-    <p>круг - английская версия сайта КУБГУ</p>
-<img src="a2cbabc9ba9c37d069d0d7fc8390e327 (1).jpg" 
-         alt="квадрат и круг"
-         usemap="#examplemap">
-
-    <map name="examplemap">
-        <area shape="rect" coords="240,25,430,195" href="https://kubsu.ru" alt="прямоугольная область" title="https://kubsu.ru">
-        <area shape="circle" coords="110,110,110" href="https://kubsu.ru/en" alt="круглая область" title="https://kubsu.ru/en">
-    </map>
-    
-    <h2>Нумерованный список</h2>
-    <ol>
-        <li><a href="https://kubsu.ru" title="Главная страница КубГУ">Главная</a></li>
-        <li><a href="https://kubsu.ru/ru/university" title="Информация об университете">Университет</a></li>
-        <li><a href="https://kubsu.ru/ru/education" title="Образовательные программы">Образование</a></li>
-        <li><a href="https://kubsu.ru/ru/science" title="Научная деятельность">Наука</a></li>
-        <li><a href="https://kubsu.ru/ru/abiturient" title="Информация для абитуриентов">Абитуриентам</a></li>
-    </ol>
-
-    <h2 id="fragment">Фрагмент текущей страницы</h2>
-    <p>Это фрагмент страницы, на который ведет ссылка из первого раздела.(п.6)</p>
-  
-    <h2>Форма для заполнения:</h2>
-    <form>
-        <label>ФИО: </label> <input type="text" name="name" placeholder="Иванов Иван Иванович" required><br>
-           
-        <label>Конт.телефон: </label> <input type="tel" name="phone" placeholder="89992223576" required><br>
-        
-        <label>Email: </label> <input type="email" name="email" placeholder="hehei@gmial.com" required><br>
-        
-        <label>Дата рождения: </label> <input type="date" name="birthofdate"><br>
-        
-        <span>Пол:</span>
-        <label><input type="radio" name="gender" value="male"> Мужской</label>
-        <label><input type="radio" name="gender" value="female"> Женский</label>
-        <br>
-
-        <label>Любимый язык программирования:
-            <select multiple name="languages">
-                <option value="pascal">Pascal</option>
-                <option value="Python">Python</option>
-                <option value="C++">C++</option>
-                <option value="C">C</option>
-                <option value="JavaScript">JavaScript</option>
-                <option value="PHP">PHP</option>
-                <option value="Java">Java</option>
-                <option value="Haskel">Haskel</option>
-                <option value="Clojure">Clojure</option>
-                <option value="Prolog">Scala</option>
-            </select>
-        </label><br>
-
-        <label>биография: <textarea name="bio"></textarea></label><br>
-        <label>с контрактом ознакомлен(a)<input type="checkbox" name="agreement"> </label><br>
-        <button type="submit">Сохранить</button>
-    </form>
-
-</body>
-
 </html>
-
-
-
-
-
-
-
-
