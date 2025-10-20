@@ -27,8 +27,8 @@ body {
 
 /* Шапка сайта - Mobile */
 #main-header {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #8ab8c1;
+    color: #ededed;
     width: 100%;
     padding: 15px 0;
     border-bottom: 2px solid #ffffff;
@@ -279,7 +279,7 @@ button[type="submit"]:hover {
 
 /* Подвал сайта */
 #main-footer {
-    background-color: #000000;
+    background-color: #244147;
     color: #ffffff;
     width: 100%;
     padding: 20px 0;
